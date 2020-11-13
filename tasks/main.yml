@@ -92,7 +92,7 @@
     dest: "{{ item.dest }}"
     checksum: "{{ item.checksum }}"
     mode: "{{ item.mode | default('0644') }}"
-    timeout: 300
+    timeout: 1000
   loop:
     - "{{ bitbucket_download }}"
     - "{{ mysql_jdbc_download }}"
